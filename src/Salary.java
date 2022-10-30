@@ -1,16 +1,17 @@
 public class Salary {
     public static void main(String[] args) {
-        int age = 23;
-        double salary = 40000;
+        int age = 25;
+        double salary = 80000;
+        double interValue;
+
+        interValue = age >= 23 ? salary * 3 : salary * 2;
 
         if (salary >= 50000 && salary < 80000) {
-            salary *= 1.2;
+            interValue *= 1.2;
         } else if (salary >= 80000) {
-            salary *= 1.5;
-        } else {
-            salary = age >= 23 ? salary * 3 : salary * 2;
+            interValue *= 1.5;
         }
-        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + salary + " реблей");
+        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + interValue + " рублей");
     }
 }
 
